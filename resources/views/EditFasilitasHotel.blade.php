@@ -57,7 +57,7 @@
       <th scope="row">{{$loop->iteration}}</th>
       <td>{{$item->Fasilitas_Hotel}}</td>
       <td><img src="{{ asset('image/'. $item->Gambar ) }}" height='10%' width='30%'></td>
-      <td><a href="/deletegambar/{{$item->id}}">Delete</a></td>
+      <td><a href="/deletegambar/{{$item->id}}" onclick="return confirm('Hapus?')">Delete</a></td>
     </tr>
   </tbody>
   @endforeach

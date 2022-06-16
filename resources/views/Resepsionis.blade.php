@@ -62,7 +62,7 @@
       <td>{{$item->kamar_id}}</td>
       <td>{{$item->Jumlah_Kamar}}</td>
       <td>{{$item->Check_out}}</td>
-      <td><a href="/editpesanan/{{$item->id}}">Edit</a> | <a href="/deletedata/{{$item->id}}">Delete</a></td>
+      <td><a href="/editpesanan/{{$item->id}}">Edit</a> | <a href="/deletedata/{{$item->id}}" onclick="return confirm('Hapus?')">Delete</a></td>
     </tr>
     @endforeach
   </tbody>

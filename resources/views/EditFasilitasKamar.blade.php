@@ -56,7 +56,7 @@
     <tr>
     <th scope="row  ">{{$loop->iteration}}</th>
     <td>{{$item->Fasilitas_Kamar}}</td>
-      <td><a href="/deletefasilitas/{{$item->id}}">Delete</a></td>
+      <td><a href="/deletefasilitas/{{$item->id}}" onclick="return confirm('Hapus?')">Delete</a></td>
     </tr>
     @endforeach
   </tbody>
@@ -80,7 +80,7 @@
     <tr>
     <th scope="row  ">{{$loop->iteration}}</th>
     <td>{{$item->Fasilitas_Kamar2}}</td>
-      <td><a href="/deletefasilitas2/{{$item->id}}">Delete</a></td>
+      <td><a href="/deletefasilitas2/{{$item->id}}" onclick="return confirm('Hapus?')">Delete</a></td>
     </tr>
   @endforeach
   </tbody>
