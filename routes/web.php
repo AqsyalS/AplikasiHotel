@@ -81,11 +81,6 @@ route::post('/tambahgambar', function(Request $request) {
             $nm->move(public_path().'/image',$namafile);
             $dtUpload->save();
 
-    //   FasilitasHotel::create([
-    //         'Fasilitas_Hotel' => $request->Fasilitas_Hotel,
-    //         'Gambar' => $request->Gambar
-    //     ]);
-
     return redirect('/editfasilitashotel'); 
 });
 Route::get('/deletegambar/{fasilitasHotel}', [FasilitasHotelController::class, 'destroy' ]);

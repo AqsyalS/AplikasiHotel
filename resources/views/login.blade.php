@@ -5,7 +5,7 @@
   body {
     margin: 0;
     padding: 0;
-    background: url(image/keybord.jpg);
+    background: url(img/Hotel2.jpg);
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -51,14 +51,14 @@
 }
 
   .login {
-    color: 	#000000;
+    color: 	#FFFFFF;
     font-size: 20pt;
     font-weight: 900;
     font-family: Centaur;
     }
 .submit1{
   padding: 1%;
-  color: #000000;
+  color: #FFFFFF;
 }
 
   </style>
@@ -68,7 +68,7 @@
 
 <div class="form">
 <span class="login">Login</span>
-<img src="image/profil.jpg" class="avatar">
+<img src="img/profil.jpg" class="avatar">
  <form action="/login" method="post">
      @csrf
   <input class="input" type="email" name="email" placeholder="email"><br>
