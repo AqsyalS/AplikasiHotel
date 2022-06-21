@@ -21,9 +21,6 @@
     
         <ul class="nav justify-content-end">
             <li class="nav-item">
-                <a class="nav-link text-white {{ Request::is('Admin') ? 'disabled text-decoration-underline' : '' }}" aria-current="page" href="/admin">Admin</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link text-white {{ Request::is('Admin') ? 'disabled text-decoration-underline' : '' }}" aria-current="page" href="/resepsionis">Resepsionis</a>
             </li>
             <li class="nav-item">
@@ -38,7 +35,7 @@
             <li class="nav-item">
                 <form action="/logout" method="post">
             @csrf
-                    <button type="submit" class=""><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                    <button type="submit" class="" onclick="return confirm('Ingin keluar?')"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
                 </form>
             </li>
         </ul>

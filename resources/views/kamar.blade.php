@@ -38,7 +38,7 @@
                   <li class="nav-item">
                 <form action="/logout" method="post">
             @csrf
-                    <button type="submit" class=""><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                    <button type="submit" class="" onclick="return confirm('Ingin keluar?')"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
                 </form>
             </li>
               </ul>
